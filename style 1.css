@@ -16,24 +16,25 @@ a:hover {
 }
 
 .menu {
-    background: rgb(0, 0, 0);
+    display: flex; /* Organiza os itens do menu em linha */
+    justify-content: center; /* Centraliza o menu horizontalmente */
+    align-items: center; /* Centraliza os itens verticalmente */
+    background-color: rgba(252, 227, 240, 0.8); /* Cor de fundo da caixa do menu com transparência */
+    padding: 5px; /* Espaçamento interno do menu */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidade */
 }
-
-.menu ul {
-    display: flex; /* Organiza itens em linha */
-    flex-direction: row;
-    justify-content: flex-start;
-    padding: 0; /* Remove o padding padrão da lista */
-    margin: 0; /* Remove a margem padrão da lista */
-    list-style: none; /* Remove os pontos */
-}
-
 .menu li {
-    margin: 0; /* Remove a margem padrão dos itens de lista */
+        margin: 0 15px; /* Espaçamento entre os itens do menu */
+        list-style: none; /* Remove o estilo de lista padrão */
 }
-
 .menu a:hover {
     text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
-    background: rgb(84, 52, 11); /* Fundo ao passar o mouse */
     color: rgb(246, 94, 155); /* Define a cor do link ao passar o mouse */
+}
+.img {
+    position: fixed; /* Posicionamento absoluto em relação ao body */
+    top: 200px; /* Distância do topo da página */
+    left: 100px; /* Distância da esquerda da página */
+    width: 300px; /* Largura da imagem */
+    height: auto; /* Manter a proporção da imagem */
 }
