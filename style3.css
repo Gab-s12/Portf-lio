@@ -1,31 +1,114 @@
+/* Estilos Gerais */
 body {
-    background-color: #f8c4df;
+    font-family: 'Didot', serif;
+    margin: 0;
+    padding: 0;
+    background-color: #d2c4b6;
+    color: #333;
 }
 
-a {
+/* Cabeçalho */
+.header {
+    background-color: #e3d5ca;
+    padding: 40px 20px;
+    text-align: center;
+    opacity: 0;
+    animation: fadeInHeader 1s forwards;
+}
+
+.header h1 {
+    font-size: 2.5rem;
+    color: #5e503f;
+    margin: 0;
+}
+
+.header p {
+    font-size: 1.2rem;
+    color: #777;
+}
+
+/* Animação para o cabeçalho */
+@keyframes fadeInHeader {
+    to {
+        opacity: 1;
+    }
+}
+
+/* Estilos para os projetos */
+.portfolio {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 40px 20px;
+}
+
+.project {
+    background-color: rgb(239, 164, 164);
+    width: 300px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    opacity: 0;
+    transform: translateY(50px); /* Inicia um pouco abaixo */
+    animation: fadeInUp 1s forwards;
+}
+
+.project img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.project-info {
+    padding: 20px;
+}
+
+.project h2 {
+    font-size: 1.5rem;
+    color: #5e503f;
+    margin: 10px 0;
+}
+
+.project p {
+    color: #efc8c8;
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+
+.project a {
+    color: #a9927d;
     text-decoration: none;
-    color: hsl(340, 72%, 59%);
+    font-weight: bold;
+    border: 2px solid #a9927d;
+    padding: 10px;
+    border-radius: 4px;
+    transition: all 0.3s ease;
 }
 
-a:hover {
-    text-decoration: underline;
-    color: rgb(225, 126, 126);
+.project a:hover {
+    background-color: #a9927d;
+    color: rgb(250, 212, 212);
 }
-.menu{
-background: rgb(218, 152, 152);
+
+/* Animação para os projetos */
+@keyframes fadeIndown {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
-.menu ul{
-    display: flex; /*organizar itens */
-    flex-direction:row;
-    justify-content: flex-start;
-}
-.menu li{
-    list-style:none;
-}
-a{
-    text-decoration:none;
-    color: rgb(246, 94, 155)
-}
-a:hover{
-    text-decoration:underline;
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .portfolio {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project {
+        width: 90%;
+        margin-bottom: 20px;
+    }
 }

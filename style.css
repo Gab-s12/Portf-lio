@@ -1,0 +1,96 @@
+body {
+    background-image: url('ghibli.png');
+    background-size: cover;
+}
+
+.insta-icon {
+    width: 30px;
+    height: 30px;
+    position: absolute; 
+    top: 10px; 
+    right: 10px;
+}
+
+body {
+    font-family: 'Didot', serif;
+    background-color: #fdf9ed; 
+    color: #3b3a30; 
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+
+.menu {
+    background-color: #e3d5ca; 
+    top: 0;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    font-family: 'Courier New', monospace;
+}
+
+.menu ul li {
+    position: relative;
+}
+
+.menu ul li a {
+    display: block;
+    color: #3b3a30; /* Cor do texto */
+    text-align: center;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-family: 'Didot', serif;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+}
+
+.menu ul li a::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: #a9927d; 
+    transition: width 0.3s ease;
+    transform: translateX(-50%);
+}
+
+.menu ul li a:hover::before {
+    width: 80%; 
+}
+
+.menu ul li a:hover {
+    color: #5e503f;
+}
+
+
+main {
+    margin-top: 80px;
+    font-family: 'Courier New', monospace;
+}
+
+main {
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

@@ -1,59 +1,43 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style2.css">
     <title>Contato</title>
+    <link rel="stylesheet" href="style3.css">
 </head>
 <body>
-    <img src="tartaruga.png" alt="Descrição da Imagem" style="float: right; width: 200px;">
-    <form>
-    <h1 align=center><font size=50><font><font face="Edwardian Script ITC Regular"><font color="black"><font>Contato</p></font></h1>    
-    <!-- Texto: -->
-    <label for ='name'>E-mail:</label><input type='text'name='nome'valor='.'><br>
-    <label for ='name'>Instagram:</label><input type='text'name='nome'valor='.'><br>
-    <!-- Data -->
-    <!-- <input type='datetime-local'name='nome'valor='.'> -->
-    <label for ='data'>Data de nascimento: </label><input type="date"name='data' min="1950-01-01"max="2024-01-01"><br>
-    <!-- para telefone só muda para telefone -->
-    <label for ='telefone'>Telefone/WhatsApp: </label><input type="'tel" name="tel" placeholder="(XX)XXXXX-XXXX"><br>
-    Selecione o seu Estado:
-    <!-- Dropdown -->
-    <select name="Estado">Estado:
-    <option value="'SP">São Paulo</option>
-    <option value="'RJ">Rio de Janeiro</option>
-    <option value="'MG">Minas Gerais</option>
-    <option value="'">Espírito Santo</option>
-    <option value="'AC">Acre</option>
-    <option value="'AP">Amapá</option>
-    <option value="'AM">Amazomas</option>
-    <option value="'PA">Pará</option>
-    <option value="'RO">Rondônia</option>
-    <option value="'RR">Roraima</option>
-    <option value="'TO">Tocantis</option>
-    <option value="'AL">Alagoas</option>
-    <option value="'BA">Bahia</option>
-    <option value="'CE">Ceará</option>
-    <option value="'MA">Maranhão</option>
-    <option value="'PB">Paraíba</option>
-    <option value="'PE">Pernambuco</option>
-    <option value="'PI">Piauí</option>
-    <option value="'RN">Rio Grande do Norte</option>
-    <option value="'SE">Sergipe</option>
-    <option value="'DF">Distrito Federal</option>
-    <option value="'GO">Goiás</option>
-    <option value="'MT">Mato Grosso</option>
-    <option value="'MS">Mato Grosso do Suk</option>
-    <option value="'SC">Santa Catarina</option>
-    <option value="'PR">Paraná</option>
-    <option value="'RS">Rio Grande do Sul</option>
+    <header class="header">
+        <h1>Entre em Contato</h1>
+    </header>
 
-    <th><img src="i.png" widht="1000" height="500"></th>
-    <input type="submit" name="'Enviar"></body><br> 
-    <!-- <button type="submit" name="'Enviar">Enviar</button> -->
-    <!-- Text área -->
-    <!-- <textarea rows=5 ></textarea> -->
-    </form>
+    <section class="contact-form">
+        <form action="#" method="POST">
+            <div class="input-group">
+<br>
+                <label for="name">Nome</label>
+                <input type="text" id="name" name="name" required placeholder="Digite seu nome">
+            </div>
+<br>
+            <div class="input-group">
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" required placeholder="Digite seu e-mail">
+            </div>
+<br>
+            <div class="input-group">
+                <label for="message">Telefone</label>
+                <input type="'tel" name="tel" placeholder="(XX)XXXXX-XXXX"><br>
+<br>           
+               
+            </div>
+
+            <button type="submit" class="submit-btn">Enviar</button>
+        </form>
+    </section>
+<br>
+    <footer class="footer">
+        <p>&copy; 2024 Meu Portfólio. Todos os direitos reservados.</p>
+    </footer>
+<br>
 </body>
 </html>
