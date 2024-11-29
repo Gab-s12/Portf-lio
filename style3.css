@@ -112,3 +112,26 @@ body {
         margin-bottom: 20px;
     }
 }
+
+.video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+    text-align: center;
+}
+
+header {
+    text-align: center;
+}
+        @keyframes diminuir {
+            0% {
+                transform: scale(1); 
+            }
+            100% {
+                transform: scale(0.5); 
+            }
+        }
+
+
+
